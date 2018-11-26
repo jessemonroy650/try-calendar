@@ -3,28 +3,17 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.try-calendar"
         version     = "1.6.0"
-        versionCode = "101" > <!-- versionCode is optional and Android only -->
-        <!-- Tool Set Version -->        
-        <preference name='phonegap-version' value='cli-5.2.0' />
-
+        versionCode = "101" > 
         <name>try-calendar</name>
         <description>try-calendar</description>
-        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
-        Jesse Monroy
-        </author>
+        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">Jesse Monroy</author>
 
-        <!-- Target Platforms -->
-        <platform name="android" />
-        <platform name="ios" />
-        <platform name="winphone" />
-
-        <!-- App requested permission -->
-        <preference name="permissions" value="none"/>
+        <preference name='phonegap-version' value='cli-8.1.1' />
         <preference name="android-build-tool" value="gradle" />
+        <platform name="android" />
 
         <!-- PLUGINS * PLUGINS * PLUGINS -->
-        <plugin name="cordova-plugin-device"         source="npm" spec="1.0.1" />
+        <plugin name="cordova-plugin-device" spec="~2.0.2" />
+        <plugin name="cordova-plugin-calendar" spec="~5.1.3" />
 
-        <!-- 3rd PARTY PLUGINS *3rd PARTY PLUGINS -->
-        <plugin name="cordova-plugin-calendar" source="npm" spec="4.4.5" />
     </widget>
